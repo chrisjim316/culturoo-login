@@ -6,6 +6,7 @@ $(document).ready(function () {
       $("#errorMessage").html("Login successful!");
     } else {
       console.log("invalid password"); //debugging
+      $("table").hide();
       $("#errorMessage").html("Invalid username or password.");
     }
     return false;
