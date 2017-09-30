@@ -32,11 +32,10 @@ function validateUser() {
     var name = user.username;
     var pw = user.password;
     if(passWord === pw && userName === name) {
+      var url = "https://chrisjim316.github.io/Video?username=" + userName;
+      $(".video-link").attr("href", url);
        return true;
     }
   }
   return false;
 }
-
-
-
